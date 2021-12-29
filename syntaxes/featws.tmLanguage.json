@@ -1,0 +1,92 @@
+{
+	"information_for_contributors": [
+		"This file has been converted from https://github.com/bancodobrasil/featws.tmbundle/blob/master/Syntaxes/FeatWS.plist",
+		"If you want to provide a fix or improvement, please create a pull request against the original repository.",
+		"Once accepted there, we are happy to receive an update request."
+	],
+	"version": "https://github.com/bancodobrasil/featws.tmbundle/commit/53727ffb141aafee559d23ffb2f754eb0a4e9f41",
+	"name": "FeatWS",
+	"scopeName": "source.featws",
+	"patterns": [
+		{
+			"begin": "(^[ \\t]+)?(?=;)",
+			"beginCaptures": {
+				"1": {
+					"name": "punctuation.whitespace.comment.leading.featws"
+				}
+			},
+			"end": "(?!\\G)",
+			"patterns": [
+				{
+					"begin": ";",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.featws"
+						}
+					},
+					"end": "\\n",
+					"name": "comment.line.semicolon.featws"
+				}
+			]
+		},
+		{
+			"captures": {
+				"1": {
+					"name": "keyword.other.definition.featws"
+				},
+				"2": {
+					"name": "punctuation.separator.key-value.featws"
+				}
+			},
+			"match": "\\b([a-zA-Z0-9_.-]+)\\b\\s*(=)"
+		},
+		{
+			"captures": {
+				"1": {
+					"name": "punctuation.definition.entity.featws"
+				},
+				"3": {
+					"name": "punctuation.definition.entity.featws"
+				}
+			},
+			"match": "^(\\[)(.*?)(\\])",
+			"name": "entity.name.section.group-title.featws"
+		},
+		{
+			"begin": "'",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.featws"
+				}
+			},
+			"end": "'",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.featws"
+				}
+			},
+			"name": "string.quoted.single.featws",
+			"patterns": [
+				{
+					"match": "\\\\.",
+					"name": "constant.character.escape.featws"
+				}
+			]
+		},
+		{
+			"begin": "\"",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.featws"
+				}
+			},
+			"end": "\"",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.featws"
+				}
+			},
+			"name": "string.quoted.double.featws"
+		}
+	]
+}

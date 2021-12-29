@@ -1,5 +1,5 @@
 {
-  "name": "feat",
+  "name": "js-featws",
   "displayName": "%displayName%",
   "description": "%description%",
   "version": "1.0.0",
@@ -9,27 +9,27 @@
     "vscode": "*"
   },
   "scripts": {
-    "update-grammar": "vscode-grammar-updater bancodobrasil/feat.tmbundle Syntaxes/Feat.plist ./syntaxes/feat.tmLanguage.json"
+    "update-grammar": "vscode-grammar-updater bancodobrasil/featws.tmbundle Syntaxes/FeatWS.plist ./syntaxes/featws.tmLanguage.json"
   },
   "contributes": {
     "languages": [
       {
-        "id": "feat",
+        "id": "featws",
         "extensions": [
-          ".feat"
+          ".featws"
         ],
         "aliases": [
-          "Feat",
-          "feat"
+          "FeatWS",
+          "featws"
         ],
-        "configuration": "./feat.language-configuration.json"
+        "configuration": "./featws.language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "feat",
-        "scopeName": "source.feat",
-        "path": "./syntaxes/feat.tmLanguage.json"
+        "language": "featws",
+        "scopeName": "source.featws",
+        "path": "./syntaxes/featws.tmLanguage.json"
       }
     ]
   },
