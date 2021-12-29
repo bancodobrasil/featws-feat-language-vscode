@@ -1,70 +1,33 @@
 {
-  "name": "ini",
+  "name": "feat",
   "displayName": "%displayName%",
   "description": "%description%",
   "version": "1.0.0",
-  "publisher": "vscode",
+  "publisher": "bancodobrasil",
   "license": "MIT",
   "engines": {
     "vscode": "*"
   },
-  "scripts": {
-    "update-grammar": "node ../node_modules/vscode-grammar-updater/bin textmate/ini.tmbundle Syntaxes/Ini.plist ./syntaxes/ini.tmLanguage.json"
-  },
   "contributes": {
     "languages": [
       {
-        "id": "ini",
+        "id": "feat",
         "extensions": [
-          ".ini"
+          ".feat"
         ],
         "aliases": [
-          "Ini",
-          "ini"
+          "Feat",
+          "feat"
         ],
-        "configuration": "./ini.language-configuration.json"
-      },
-      {
-        "id": "properties",
-        "extensions": [
-          ".properties",
-          ".cfg",
-          ".conf",
-          ".directory",
-          ".gitattributes",
-          ".gitconfig",
-          ".gitmodules",
-          ".editorconfig"
-        ],
-        "filenames": [
-          "gitconfig"
-        ],
-        "filenamePatterns": [
-          "**/.config/git/config",
-          "**/.git/config"
-        ],
-        "aliases": [
-          "Properties",
-          "properties"
-        ],
-        "configuration": "./properties.language-configuration.json"
+        "configuration": "./feat.language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "ini",
-        "scopeName": "source.ini",
-        "path": "./syntaxes/ini.tmLanguage.json"
-      },
-      {
-        "language": "properties",
-        "scopeName": "source.ini",
-        "path": "./syntaxes/ini.tmLanguage.json"
+        "language": "feat",
+        "scopeName": "source.feat",
+        "path": "./syntaxes/feat.tmLanguage.json"
       }
     ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/microsoft/vscode.git"
   }
 }

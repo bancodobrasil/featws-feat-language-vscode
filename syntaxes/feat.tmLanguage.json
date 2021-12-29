@@ -1,0 +1,90 @@
+{
+	"information_for_contributors": [
+		""
+	],
+	"version": "",
+	"name": "Feat",
+	"scopeName": "source.feat",
+	"patterns": [
+		{
+			"begin": "(^[ \\t]+)?(?=;)",
+			"beginCaptures": {
+				"1": {
+					"name": "punctuation.whitespace.comment.leading.feat"
+				}
+			},
+			"end": "(?!\\G)",
+			"patterns": [
+				{
+					"begin": ";",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.feat"
+						}
+					},
+					"end": "\\n",
+					"name": "comment.line.semicolon.feat"
+				}
+			]
+		},
+		{
+			"captures": {
+				"1": {
+					"name": "keyword.other.definition.feat"
+				},
+				"2": {
+					"name": "punctuation.separator.key-value.feat"
+				}
+			},
+			"match": "\\b([a-zA-Z0-9_.-]+)\\b\\s*(=)"
+		},
+		{
+			"captures": {
+				"1": {
+					"name": "punctuation.definition.entity.feat"
+				},
+				"3": {
+					"name": "punctuation.definition.entity.feat"
+				}
+			},
+			"match": "^(\\[)(.*?)(\\])",
+			"name": "entity.name.section.group-title.feat"
+		},
+		{
+			"begin": "'",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.feat"
+				}
+			},
+			"end": "'",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.feat"
+				}
+			},
+			"name": "string.quoted.single.feat",
+			"patterns": [
+				{
+					"match": "\\\\.",
+					"name": "constant.character.escape.feat"
+				}
+			]
+		},
+		{
+			"begin": "\"",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.feat"
+				}
+			},
+			"end": "\"",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.feat"
+				}
+			},
+			"name": "string.quoted.double.feat"
+		}
+	]
+}
