@@ -1,8 +1,10 @@
 {
 	"information_for_contributors": [
-		""
+		"This file has been converted from https://github.com/bancodobrasil/feat.tmbundle/blob/master/Syntaxes/Feat.plist",
+		"If you want to provide a fix or improvement, please create a pull request against the original repository.",
+		"Once accepted there, we are happy to receive an update request."
 	],
-	"version": "",
+	"version": "https://github.com/bancodobrasil/feat.tmbundle/commit/aa1b0fd23c55eab7d9b3b2edc0c29dd5bcf6cc00",
 	"name": "Feat",
 	"scopeName": "source.feat",
 	"patterns": [

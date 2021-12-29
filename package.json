@@ -8,6 +8,9 @@
   "engines": {
     "vscode": "*"
   },
+  "scripts": {
+    "update-grammar": "vscode-grammar-updater bancodobrasil/feat.tmbundle Syntaxes/Feat.plist ./syntaxes/feat.tmLanguage.json"
+  },
   "contributes": {
     "languages": [
       {
@@ -29,5 +32,8 @@
         "path": "./syntaxes/feat.tmLanguage.json"
       }
     ]
+  },
+  "devDependencies": {
+    "vscode-grammar-updater": "^1.0.3"
   }
 }
