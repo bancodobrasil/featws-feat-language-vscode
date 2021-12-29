@@ -4,9 +4,9 @@
 			"component": {
 				"type": "git",
 				"git": {
-					"name": "bancodobrasil/feat.tmbundle",
-					"repositoryUrl": "https://github.com/bancodobrasil/feat.tmbundle",
-					"commitHash": "aa1b0fd23c55eab7d9b3b2edc0c29dd5bcf6cc00"
+					"name": "bancodobrasil/featws.tmbundle",
+					"repositoryUrl": "https://github.com/bancodobrasil/featws.tmbundle",
+					"commitHash": "53727ffb141aafee559d23ffb2f754eb0a4e9f41"
 				}
 			},
 			"licenseDetail": [
