@@ -1,2 +1,2 @@
-# Feat Language VS Code Extension
+# FeatWS Language VS Code Extension
 
